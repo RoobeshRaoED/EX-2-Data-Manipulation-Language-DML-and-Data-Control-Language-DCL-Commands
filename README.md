@@ -35,6 +35,8 @@ UPDATE manager SET salary = salary * 1.10;
 ```
 ### OUTPUT:
 
+![]()
+
 ### Q2) Delete the records from manager table where the salary less than 2750.
 
 
@@ -43,6 +45,8 @@ UPDATE manager SET salary = salary * 1.10;
 DELETE FROM manager WHERE salary < 2750;
 ```
 ### OUTPUT:
+
+![]()
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in MANAGER table is the monthly salary)
 
@@ -53,6 +57,8 @@ SELECT ename AS "Name", (salary * 12) + NVL(commission, 0) AS "Annual Salary" FR
 ```
 ### OUTPUT:
 
+![]()
+
 ### Q4)	List the names of Clerks from MANAGER table.
 
 
@@ -62,6 +68,7 @@ SELECT ename FROM manager WHERE designation = 'clerk';
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q5)	List the names of employee who are not Managers.
 
@@ -72,6 +79,7 @@ SELECT ename FROM manager WHERE designation != 'manager';
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q6)	List the names of employees not eligible for commission.
 
@@ -82,6 +90,7 @@ SELECT ename FROM manager WHERE commission = 0;
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q7)	List employees whose name either start or end with ‘s’.
 
@@ -92,6 +101,7 @@ SELECT ename FROM manager WHERE ename LIKE 'S%' OR ename LIKE '%S';
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q8) Sort MANAGER table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
@@ -102,6 +112,7 @@ SELECT ename, designation, deptno, Hiredate FROM manager ORDER BY hiredate ASC;
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q9) List the Details of Employees who have joined before 30 Sept 81.
 
@@ -112,6 +123,7 @@ SELECT * FROM manager WHERE Hiredate < TO_DATE('30-SEP-81', 'DD-MON-YY');
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q10)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
 
@@ -122,6 +134,7 @@ SELECT ename, deptno, salary FROM manager ORDER BY deptno ASC, salary DESC;
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q11) List the names of employees not belonging to dept no 30,40 & 10
 
@@ -132,6 +145,8 @@ SELECT ename FROM manager WHERE deptno NOT IN (10, 30, 40);
 ```
 ### OUTPUT:
 
+![]()
+
 ### Q12) Find number of rows in the table MANAGER.
 
 ### QUERY:
@@ -140,6 +155,7 @@ SELECT COUNT(*) AS "Number of Rows" FROM manager;
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q13) Find maximum, minimum and average salary in MANAGER table.
 
@@ -149,6 +165,7 @@ SELECT MAX(salary) AS "Maximum Salary", MIN(salary) AS "Minimum Salary", AVG(sal
 ```
 ### OUTPUT:
 
+![]()
 
 ### Q14) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
@@ -157,3 +174,5 @@ SELECT MAX(salary) AS "Maximum Salary", MIN(salary) AS "Minimum Salary", AVG(sal
 SELECT designation, COUNT(*) AS "Number of Employees" FROM manager GROUP BY designation ORDER BY COUNT(*) DESC;
 ```
 ### OUTPUT:
+
+![]()
