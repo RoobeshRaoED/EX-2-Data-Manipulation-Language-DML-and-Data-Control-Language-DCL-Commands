@@ -44,7 +44,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ```
 ### OUTPUT:
 
-### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
+### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in MANAGER table is the monthly salary)
 
 
 ### QUERY:
@@ -53,7 +53,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ```
 ### OUTPUT:
 
-### Q4)	List the names of Clerks from emp table.
+### Q4)	List the names of Clerks from MANAGER table.
 
 
 ### QUERY:
@@ -93,7 +93,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### OUTPUT:
 
 
-### Q8) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
+### Q8) Sort MANAGER table in ascending order by hire-date and list ename, job, deptno and hire-date.
 
 
 ### QUERY:
@@ -132,7 +132,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ```
 ### OUTPUT:
 
-### Q12) Find number of rows in the table EMP
+### Q12) Find number of rows in the table MANAGER.
 
 ### QUERY:
 ```
@@ -141,7 +141,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### OUTPUT:
 
 
-### Q13) Find maximum, minimum and average salary in EMP table.
+### Q13) Find maximum, minimum and average salary in MANAGER table.
 
 ### QUERY:
 ```
