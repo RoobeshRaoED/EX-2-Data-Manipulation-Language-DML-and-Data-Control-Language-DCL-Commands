@@ -31,7 +31,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+UPDATE manager SET salary = salary * 1.10;
 ```
 ### OUTPUT:
 
@@ -40,7 +40,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+DELETE FROM manager WHERE salary < 2750;
 ```
 ### OUTPUT:
 
@@ -49,7 +49,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename AS "Name", (salary * 12) + NVL(commission, 0) AS "Annual Salary" FROM manager;
 ```
 ### OUTPUT:
 
@@ -58,7 +58,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename FROM manager WHERE designation = 'clerk';
 ```
 ### OUTPUT:
 
@@ -68,7 +68,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename FROM manager WHERE designation != 'manager';
 ```
 ### OUTPUT:
 
@@ -78,7 +78,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename FROM manager WHERE commission = 0;
 ```
 ### OUTPUT:
 
@@ -88,7 +88,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename FROM manager WHERE ename LIKE 'S%' OR ename LIKE '%S';
 ```
 ### OUTPUT:
 
@@ -98,7 +98,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename, designation, deptno, Hiredate FROM manager ORDER BY hiredate ASC;
 ```
 ### OUTPUT:
 
@@ -108,7 +108,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT * FROM manager WHERE Hiredate < TO_DATE('30-SEP-81', 'DD-MON-YY');
 ```
 ### OUTPUT:
 
@@ -118,7 +118,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename, deptno, salary FROM manager ORDER BY deptno ASC, salary DESC;
 ```
 ### OUTPUT:
 
@@ -128,7 +128,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT ename FROM manager WHERE deptno NOT IN (10, 30, 40);
 ```
 ### OUTPUT:
 
@@ -136,7 +136,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT COUNT(*) AS "Number of Rows" FROM manager;
 ```
 ### OUTPUT:
 
@@ -145,7 +145,7 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT MAX(salary) AS "Maximum Salary", MIN(salary) AS "Minimum Salary", AVG(salary) AS "Average Salary" FROM manager;
 ```
 ### OUTPUT:
 
@@ -154,6 +154,6 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 ### QUERY:
 ```
-
+SELECT designation, COUNT(*) AS "Number of Employees" FROM manager GROUP BY designation ORDER BY COUNT(*) DESC;
 ```
 ### OUTPUT:
