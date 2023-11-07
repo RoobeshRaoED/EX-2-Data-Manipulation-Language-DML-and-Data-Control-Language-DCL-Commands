@@ -181,3 +181,6 @@ SELECT designation, COUNT(*) AS "Number of Employees" FROM manager GROUP BY desi
 ### OUTPUT:
 
 ![](2.14.png)
+
+## RESULT:
+Hence manager database has been created and DML queries are executed successfully using SQL.
